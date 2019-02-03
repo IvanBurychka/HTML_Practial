@@ -3,50 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="scripts/dragAndDrop.js"></script>
+    <link rel="stylesheet" href="styles/layout.css">
 </head>
 <body>
-<header>
-    <div class="headerlogo">
-        <a href="index.html"><img src="images/logo.png" alt=""></a>
-        <span id="headername">Joe's Coffee Store</span>
-    </div>
-    <section class="allcoffees">
-        <header class="blockheader">
-            <span>Espresso coffee beans</span>
+    <header>
+        <header id="MainHeader">
+            <div >
+                <a class="headerlogo" href="index.html"><img src="images/logo.png" alt=""></a>
+                <span id="headername">Joe's Coffee Store</span>
+                <input type="search" class="searchbox" placeholder="Search our store">
+            </div>
+            <nav class="backgroundgradient">
+                <ul>
+                    <li><a href="index.html" class="navlink">Home</a></li>
+                    <li><a href="blog.html" class="navlink">Blog</a></li>
+                    <li><a href="allcoffees.html" class="navlink">Our Coffees</a></li>
+                    <li><a href="accessoties.html" class="navlink">Accessories</a></li>
+                    <li><a href="gifts.html" class="navlink">Gifts</a></li>
+                    <li><a href="findus.html" class="navlink">Find Us</a></li>
+                    <li><a href="checkout.html" class="navlink">Checkout</a></li>
+                </ul>
+            </nav>
         </header>
+    </header>
+        <section class="allcoffees">
+            <header class="blockheader">
+                <span>Espresso coffee beans</span>
+            </header>
 
-        <article class="productarticlewide" id="coffee-1" data-price="10$">
-            <img src="images/coffee/coffee1.jpg" alt="" id="coffee1" class="productarticlewidethumbnail">
-            <div class="productarticlewidecontent">
-                <header>
-                    <span class="productarticlewidename">Coffee 1</span>
-                    <p class="productarticlewidedescription">Lorem ipsum dolor sit amet, nec ex tota veritus democritum. Ut nec scaevola reformidans, erat facer ornatus in vix, sed graece accusam te.                        Ei ridens quidam mel, eum insolens eloquentiam no, quaestio consectetuer an mea.                        Vide oportere eloquentiam te per, ei vis corpora verterem, mel an prima meliore repudiare.                        In fugit civibus detraxit eam. Porro partem legere his te, mundi assentior ei vim.</p>
-                    <p class="productarticlewideprice">10$</p>
-                </header>
-            </div>
-        </article>
-        <article class="productarticlewide" id="coffee-1" data-price="10$">
-            <img src="images/coffee/coffee1.jpg" alt="" id="coffee1" class="productarticlewidethumbnail">
-            <div class="productarticlewidecontent">
-                <header>
-                    <span class="productarticlewidename">Coffee 1</span>
-                    <p class="productarticlewidedescription">Lorem ipsum dolor sit amet, nec ex tota veritus democritum. Ut nec scaevola reformidans, erat facer ornatus in vix, sed graece accusam te.                        Ei ridens quidam mel, eum insolens eloquentiam no, quaestio consectetuer an mea.                        Vide oportere eloquentiam te per, ei vis corpora verterem, mel an prima meliore repudiare.                        In fugit civibus detraxit eam. Porro partem legere his te, mundi assentior ei vim.</p>
-                    <p class="productarticlewideprice">10$</p>
-                </header>
-            </div>
-        </article>
-        <article class="productarticlewide" id="coffee-1" data-price="10$">
-            <img src="images/coffee/coffee1.jpg" alt="" id="coffee1" class="productarticlewidethumbnail">
-            <div class="productarticlewidecontent">
-                <header>
-                    <span class="productarticlewidename">Coffee 1</span>
-                    <p class="productarticlewidedescription">Lorem ipsum dolor sit amet, nec ex tota veritus democritum. Ut nec scaevola reformidans, erat facer ornatus in vix, sed graece accusam te.                        Ei ridens quidam mel, eum insolens eloquentiam no, quaestio consectetuer an mea.                        Vide oportere eloquentiam te per, ei vis corpora verterem, mel an prima meliore repudiare.                        In fugit civibus detraxit eam. Porro partem legere his te, mundi assentior ei vim.</p>
-                    <p class="productarticlewideprice">10$</p>
-                </header>
-            </div>
-        </article>
+            <article class="productarticlewide" id="coffee-1" data-price="10$" draggable="true">
+                <img src="images/coffee/coffee1.jpg" alt="" id="coffee1" class="productarticlewidethumbnail">
+                <div class="productarticlewidecontent">
+                    <header>
+                        <span class="productarticlewidename">Coffee 1</span>
+                        <p class="productarticlewidedescription">Lorem ipsum dolor sit amet, nec ex tota veritus democritum. Ut nec scaevola reformidans, erat facer ornatus in vix, sed graece accusam te.                        Ei ridens quidam mel, eum insolens eloquentiam no, quaestio consectetuer an mea.                        Vide oportere eloquentiam te per, ei vis corpora verterem, mel an prima meliore repudiare.                        In fugit civibus detraxit eam. Porro partem legere his te, mundi assentior ei vim.</p>
+                        <p class="productarticlewideprice">10$</p>
+                    </header>
+                </div>
+            </article>
+            <article class="productarticlewide" id="coffee-1" data-price="10$" draggable="true">
+                <img src="images/coffee/coffee1.jpg" alt="" id="coffee1" class="productarticlewidethumbnail">
+                <div class="productarticlewidecontent">
+                    <header>
+                        <span class="productarticlewidename">Coffee 1</span>
+                        <p class="productarticlewidedescription">Lorem ipsum dolor sit amet, nec ex tota veritus democritum. Ut nec scaevola reformidans, erat facer ornatus in vix, sed graece accusam te.                        Ei ridens quidam mel, eum insolens eloquentiam no, quaestio consectetuer an mea.                        Vide oportere eloquentiam te per, ei vis corpora verterem, mel an prima meliore repudiare.                        In fugit civibus detraxit eam. Porro partem legere his te, mundi assentior ei vim.</p>
+                        <p class="productarticlewideprice">10$</p>
+                    </header>
+                </div>
+            </article>
+            <article class="productarticlewide" id="coffee-1" data-price="10$" draggable="true">
+                <img src="images/coffee/coffee1.jpg" alt="" id="coffee1" class="productarticlewidethumbnail">
+                <div class="productarticlewidecontent">
+                    <header>
+                        <span class="productarticlewidename">Coffee 1</span>
+                        <p class="productarticlewidedescription">Lorem ipsum dolor sit amet, nec ex tota veritus democritum. Ut nec scaevola reformidans, erat facer ornatus in vix, sed graece accusam te.                        Ei ridens quidam mel, eum insolens eloquentiam no, quaestio consectetuer an mea.                        Vide oportere eloquentiam te per, ei vis corpora verterem, mel an prima meliore repudiare.                        In fugit civibus detraxit eam. Porro partem legere his te, mundi assentior ei vim.</p>
+                        <p class="productarticlewideprice">10$</p>
+                    </header>
+                </div>
+            </article>
+        </section>
+    <div id="shoppingcart">
+        <header class="blockheader">
+            <span>Shopping cart</span>
+        </header>
+        <ul></ul>
+    </div>
 
-    </section>
-</header>
+    <script>
+        document.addEventListener('DOMContentLoaded', addDnDHandlers, false);
+    </script>
+
 </body>
 </html>
